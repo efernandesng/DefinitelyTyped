@@ -121,6 +121,11 @@ declare module 'pug' {
      */
     export function renderFile(path: string, options: Options & LocalsObject, callback: (err: Error | null, html: string) => void): void;
 
+    ////////////////////////////////////////////////////////////
+    /// https://expressjs.com/en/4x/api.html#app.engine      ///
+    ////////////////////////////////////////////////////////////
+    export function __express(path:string, options: Options & LocalsObject, callback: (err: Error | null, html: string) => void);
+    
     ///////////////////
     ///    Types    ///
     ///////////////////
